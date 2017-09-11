@@ -313,7 +313,7 @@ def problem0c(circle, n, window):
         x1 = x1 + 2 * r
         c.attach_to(window)
         window.render(0.5)
-    window.close_on_mouse_click()
+
 
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
