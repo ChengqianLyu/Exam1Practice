@@ -326,7 +326,7 @@ def problem1c(n):
            and the sum of the digits in 223092870 is 33.
     """
     # ------------------------------------------------------------------
-    # TODO: 6. Implement and test this function.
+    # DONE: 6. Implement and test this function.
     #          Tests have been written for you (above).
     #
     ####################################################################
@@ -341,14 +341,11 @@ def problem1c(n):
     #    TIME ESTIMATE:   15 to 20 minutes.
     # ------------------------------------------------------------------
     c = 1
-    e = 0
     for k in range(2,n+1):
         d = is_prime(k)
-        e = e + sum_of_digits(c)
         if d is True:
             c = c*k
-            return c
-    return e
+    return sum_of_digits(c)
 
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
